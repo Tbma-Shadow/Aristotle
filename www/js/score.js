@@ -17,29 +17,29 @@ function get_current_state(){
 		document.getElementById("name").innerHTML = window.localStorage['procedure_text'];
 		document.getElementById("total_main").innerHTML = window.localStorage['total'];
 	}
-	  window.localStorage['procedure_score']= document.getElementById("b_score").innerHTML;
-	 window.localStorage['procedure_text']= document.getElementById("name").innerHTML;
-	 window.localStorage['total']= document.getElementById("total_main").innerHTML;
+	window.localStorage['procedure_score']= document.getElementById("b_score").innerHTML;
+	window.localStorage['procedure_text']= document.getElementById("name").innerHTML;
+	window.localStorage['total']= document.getElementById("total_main").innerHTML;
 }
 
 function update_total_score(id){
 	var score = window.localStorage['total'];
-	document.getElementsByName(id)[0].placeholder = score;
+	document.getElementById(id).innerHTML = score;
 }
 
 function update_score(id,index) {
 	var ide;
 	if (index == 0){
-		ide = "general";
+		ide = "general_total";
 	}
 	else if (index == 1){
-		ide = "clinical";
+		ide = "clinical_total";
 	}
 	else if (index == 2){
-		ide = "extracardiac";
+		ide = "extracardiac_total";
 	}
 	else if (index == 3){
-		ide = "surgical";
+		ide = "surgical_total";
 	}
     var score = parseFloat(id.value);
     if (id.checked == true) {

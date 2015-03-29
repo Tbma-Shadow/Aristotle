@@ -28,11 +28,17 @@
         <ion-content>
         <div id = "general"></div>
         <div class="card">
+            <div class="item item-divider item-text-wrap">Total Score</div>
+            <div class="item item-text-wrap" id="general_total"></div>
+        </div>
+        <!--
+        <div class="card">
                 <label class="item item-input item-stacked-label">
                     <span class="total_main">Total Score</span>
                     <input type="text" name="general" placeholder="0.0">
                 </label>
             </div>
+            -->
         </ion-content>
         <ion-footer-bar align-title="left" class="bar-calm">
             <h1 class="title"></h1>
@@ -45,7 +51,7 @@
     </ion-pane>
     <script>
     create_checkboxes(general,"general");
-    update_total_score("general");
+    update_total_score("general_total");
     </script>
 </body>
 </html>

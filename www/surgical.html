@@ -28,11 +28,9 @@
         <ion-content>
         <div id = "surgical"></div>
         <div class="card">
-                <label class="item item-input item-stacked-label">
-                    <span class="total_main">Total Score</span>
-                    <input type="text" name="surgical" placeholder="0.0">
-                </label>
-            </div>
+            <div class="item item-divider item-text-wrap">Total Score</div>
+            <div class="item item-text-wrap" id="surgical_total"></div>
+        </div>
         </ion-content>
         <ion-footer-bar align-title="left" class="bar-calm">
             <div class="buttons">
@@ -45,7 +43,7 @@
     </ion-pane>
     <script>
     create_checkboxes(surgical,"surgical");
-    update_total_score("surgical");
+    update_total_score("surgical_total");
     </script>
 </body>
 </html>
