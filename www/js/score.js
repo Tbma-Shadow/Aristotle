@@ -5,20 +5,20 @@ function store_score(){
 }
 
 function store_state(){
-	window.localStorage['procedure_text'] = document.getElementsByName("name")[0].placeholder;
-	window.localStorage['procedure_score'] = document.getElementsByName("b_score")[0].placeholder;
+	window.localStorage['procedure_text'] = document.getElementById("name").innerHTML;
+	window.localStorage['procedure_score'] = document.getElementById("b_score").innerHTML;
 	window.localStorage['total'] = document.getElementsByName("total_main")[0].placeholder;
 }
 
 function get_current_state(){
 	var x = window.localStorage['procedure_text'];
 	if (x != null){
-	    document.getElementsByName("b_score")[0].placeholder = window.localStorage['procedure_score'];
-		document.getElementsByName("name")[0].placeholder = window.localStorage['procedure_text'];
+	    document.getElementById("b_score").innerHTML = window.localStorage['procedure_score'];
+		document.getElementById("name").innerHTML = window.localStorage['procedure_text'];
 		document.getElementsByName("total_main")[0].placeholder = window.localStorage['total'];
 	}
-	  window.localStorage['procedure_score']=document.getElementsByName("b_score")[0].placeholder;
-	 window.localStorage['procedure_text']= document.getElementsByName("name")[0].placeholder ;
+	  window.localStorage['procedure_score']= document.getElementById("b_score").innerHTML;
+	 window.localStorage['procedure_text']= document.getElementById("name").innerHTML;
 	 window.localStorage['total']=document.getElementsByName("total_main")[0].placeholder ;
 }
 

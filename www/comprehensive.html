@@ -29,14 +29,12 @@
                 </label>
             </div>
             <div class="card">
-                <label class="item item-input item-stacked-label">
-                    <span class="input-label">Procedure Name</span>
-                    <input type="text" name="name" placeholder="">
-                </label>
-                <label class="item item-input item-stacked-label">
-                    <span class="input-label">Basic Score</span>
-                    <input type="text" name="b_score" placeholder="">
-                </label>
+                <div class="item item-divider item-text-wrap">Procedure Name</div>
+                <div class="item item-text-wrap" id="name"></div>
+            </div>
+            <div class="card">
+                <div class="item item-divider item-text-wrap">Basic Score</div>
+                <div class="item item-text-wrap" id="b_score"></div>
             </div>
             <form action="dependent_score.html">
                 <button class="button button-block button-calms" onclick = "store_score();">Select the Dependent Factors</button>

@@ -1,7 +1,7 @@
 function update() {
     var name = document.getElementById("search").value;
-    document.getElementsByName("name")[0].placeholder = name;
-    document.getElementsByName("b_score")[0].placeholder = parseFloat(get_score(name));
+    document.getElementById("name").innerHTML = name;
+    document.getElementById("b_score").innerHTML = parseFloat(get_score(name));
     total_score = parseFloat(get_score(name));
     document.getElementsByName("total_main")[0].placeholder = total_score;
 }
