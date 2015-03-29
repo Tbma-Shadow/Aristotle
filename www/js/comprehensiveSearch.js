@@ -1,9 +1,11 @@
+var total_score;
+
 function update() {
     var name = document.getElementById("search").value;
-    document.getElementsByName("name")[0].placeholder = name;
-    document.getElementsByName("b_score")[0].placeholder = parseFloat(get_score(name));
-    total_score = parseFloat(get_score(name));
-    document.getElementsByName("total_main")[0].placeholder = total_score;
+    document.getElementById("procedureName").innerHTML = name;
+    document.getElementById("basicScore").innerHTML = get_score(name);
+    total_score = get_score(name);
+    document.getElementById("totalScore").innerHTML = total_score;
 }
 
 function get_score(name){
@@ -12,6 +14,10 @@ function get_score(name){
             return procedures[i].score;
         }
     }
+}
+
+function send_score(){
+    document.getElementById("totalScore").innerHTML = total_score;
 }
 
 angular.module('starter', ['ionic', 'autocomplete.directive'])

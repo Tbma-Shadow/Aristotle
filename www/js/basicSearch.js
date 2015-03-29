@@ -17,27 +17,19 @@ function get_index(name){
 }
 
 function get_score(index){
-	score = parseFloat(procedures[index].score);
-	score = score.toFixed(1);
-    return score;
+    return procedures[index].score;
 }
 
 function get_mortality(index){
-	mortality = parseFloat(procedures[index].mortality);
-	mortality = mortality.toFixed(1);
-    return mortality;
+    return procedures[index].mortality;
 }
 
 function get_morbidity(index){
-	morbidity = parseFloat(procedures[index].morbidity);
-	morbidity = morbidity.toFixed(1);
-    return morbidity;
+    return procedures[index].morbidity;
 }
 
 function get_difficulty(index){
-	difficulty = parseFloat(procedures[index].difficulty);
-	difficulty = difficulty.toFixed(1);
-    return difficulty;
+    return procedures[index].difficulty;
 }
 
 
