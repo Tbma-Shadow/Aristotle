@@ -1254,3 +1254,357 @@ var procedures = [
         "number": ""
     }
 ]
+
+var general = [
+  {
+    "text":"Weight < 2.5 kg",
+    "score":2
+  },
+  {
+    "text":"Prematurity 32 - 35 weeks",
+    "score":2
+  },
+  {
+    "text":"Extreme Prematurity < 32 weeks",
+    "score":4
+  }
+]
+
+var surgical = [
+  {
+    "text":"Redosternotomy: Redo # 1, 2, or 3",
+    "score":2
+  },
+  {
+    "text":"Redosternotomy: Redo # 4 or more",
+    "score":1
+  },
+  {
+    "text":"Redothoracotomy",
+    "score":1
+  },
+  {
+    "text":"Minimal invasive sternotomy",
+    "score":0.5
+  },
+  {
+    "text":"Minimal invasive anterolateral thoracotomy",
+    "score":0.5
+  },
+  {
+    "text":"Minimal invasive posterolateral thoracotomy",
+    "score":0.5
+  },
+  {
+    "text":"Minimal invasive posterior thoracotomy",
+    "score":1
+  },
+  {
+    "text":"Robot assisted surgery",
+    "score":0.5
+  },
+  {
+    "text":"Video assisted thoracic surgery (VATS)",
+    "score":0.5
+  }
+]
+
+var clinical = [
+  {
+    "text":"Mechanical Cardio-Pulmonary Support ",
+    "score":4
+  },
+  {
+    "text":"Shock - persistent at time of surgery",
+    "score":3
+  },
+  {
+    "text":"Myocardial dysfunction",
+    "score":2
+  },
+  {
+    "text":"Cardio-pulmonary resuscitation",
+    "score":2
+  },
+  {
+    "text":"Shock - resolved at time of surgery",
+    "score":1
+  },
+  {
+    "text":"Supraventricular tachycardia",
+    "score":0.5
+  },
+  {
+    "text":"Ventricular tachycardia",
+    "score":0.5
+  },
+  {
+    "text":"Mechanical ventilation to treat cardiorespiratory failure",
+    "score":2
+  },
+  {
+    "text":"Respiratory Syncytial Virus",
+    "score":3
+  },
+  {
+    "text":"Elevated lung resistances. Bi-ventricular repair",
+    "score":2
+  },
+  {
+    "text":"Elevated lung resistances. Heart transplant",
+    "score":2
+  },
+  {
+    "text":"Elevated lung resistances. Uni-ventricular repair",
+    "score":2
+  },
+  {
+    "text":"Single lung",
+    "score":3
+  },
+  {
+    "text":"Tracheostomy",
+    "score":1
+  },
+  {
+    "text":"Septicemia",
+    "score":2
+  },
+  {
+    "text":"Endocarditis",
+    "score":3
+  },
+  {
+    "text":"Necrotizing entero-colitis treated medically",
+    "score":1
+  },
+  {
+    "text":"Necrotizing entero-colitis treated surgically",
+    "score":2
+  },
+  {
+    "text":"Hepatic dysfunction",
+    "score":1
+  },
+  {
+    "text":"Enterostomy present",
+    "score":0.5
+  },
+  {
+    "text":"Coagulation disorder - Acquired",
+    "score":1
+  },
+  {
+    "text":"Coagulation disorder - Congenital",
+    "score":0.5
+  },
+  {
+    "text":"Renal dysfunction",
+    "score":1
+  },
+  {
+    "text":"Renal failure requiring dialysis",
+    "score":3
+  },
+  {
+    "text":"Stroke, CVA, or Intracranial hemorrhage < Grade 2 lifetime",
+    "score":1
+  },
+  {
+    "text":"Stroke, CVA, or Intracranial hemorrhage > Grade 2",
+    "score":2
+  },
+  {
+    "text":"Seizure during lifetime",
+    "score":0.5
+  },
+  {
+    "text":"Seizure within 48 h prior to surgery ",
+    "score":1
+  },
+  {
+    "text":"Hypothyroidism",
+    "score":1
+  },
+  {
+    "text":"Diabetes mellitus - insulin dependent",
+    "score":1
+  },
+  {
+    "text":"Diabetes mellitus - non-insulin dependent",
+    "score":0.5
+  },
+  {
+    "text":"Criss-cross heart",
+    "score":0.5
+  },
+  {
+    "text":"Dextrocardia",
+    "score":0.5
+  },
+  {
+    "text":"Ectopia cordis",
+    "score":4
+  }
+]
+
+var extracardiac = [
+  {
+    "text":"Hydrocephalus",
+    "score":0.5
+  },
+  {
+    "text":"Spina Bifida",
+    "score":0.5
+  },
+  {
+    "text":"Laryngo-malacia",
+    "score":3
+  },
+  {
+    "text":"Broncho-tracheal Malacia",
+    "score":3
+  },
+  {
+    "text":"Cystic fibrosis",
+    "score":2
+  },
+  {
+    "text":"Tracheo-oesophageal Fistula",
+    "score":1
+  },
+  {
+    "text":"Pulmonary lymphangectasis",
+    "score":1
+  },
+  {
+    "text":"Choanal atresia",
+    "score":0.5
+  },
+  {
+    "text":"Cleft Palate",
+    "score":0.5
+  },
+  {
+    "text":"Congenital lobar emphysema",
+    "score":0.5
+  },
+  {
+    "text":"Congenital cystic adenomatoid malformation",
+    "score":0.5
+  },
+  {
+    "text":"Sequestration",
+    "score":0.5
+  },
+  {
+    "text":"Chest wall deformity including pectus",
+    "score":0.5
+  },
+  {
+    "text":"Biliary atresia",
+    "score":4
+  },
+  {
+    "text":"Gastroschises",
+    "score":2
+  },
+  {
+    "text":"Omphalocoele",
+    "score":1
+  },
+  {
+    "text":"Duodenal atresia",
+    "score":1
+  },
+  {
+    "text":"Imperforate anus",
+    "score":0.5
+  },
+  {
+    "text":"Hirshsprungs disease",
+    "score":0.5
+  },
+  {
+    "text":"Inflammatory bowel disease - Crohn's, Ulcerative colitis",
+    "score":0.5
+  },
+  {
+    "text":"Polycistic disease",
+    "score":0.5
+  },
+  {
+    "text":"Vesicouteric reflux",
+    "score":0.5
+  },
+  {
+    "text":"Hydronephrosis (PUJ and VUJ obstruction)",
+    "score":0.5
+  },
+  {
+    "text":"Marfan's syndrome",
+    "score":2
+  },
+  {
+    "text":"Down's syndrome",
+    "score":1
+  },
+  {
+    "text":"Di George",
+    "score":1
+  },
+  {
+    "text":"22q11 deletion",
+    "score":1
+  },
+  {
+    "text":"William Beuren's syndrome",
+    "score":1
+  },
+  {
+    "text":"Alagille's syndrome",
+    "score":0.5
+  },
+  {
+    "text":"Turner's syndrome",
+    "score":0.5
+  },
+  {
+    "text":"Genetic + Chromosomal Other",
+    "score":0.5
+  },
+  {
+    "text":"Heterotaxia",
+    "score":1
+  },
+  {
+    "text":"Situs inversus",
+    "score":0.5
+  },
+  {
+    "text":"Criss-cross heart",
+    "score":0.5
+  },
+  {
+    "text":"Dextrocardia",
+    "score":0.5
+  },
+  {
+    "text":"Ectopia cordis",
+    "score":4
+  },
+  {
+    "text":"Diabetic mother",
+    "score":1
+  },
+  {
+    "text":"Muscular dystrophy",
+    "score":0.5
+  },
+  {
+    "text":"Currently taking steroids",
+    "score":0.5
+  }
+]
+
+var factors = [general,clinical,extracardiac,surgical];

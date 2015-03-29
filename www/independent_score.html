@@ -13,13 +13,14 @@
     <script src="js/app.js"></script>
     <script src="js/search.js"></script>
     <script src="js/data.js"></script>
+    <script src="js/score.js"></script>
 </head>
 
 <body ng-app="starter">
     <ion-pane>
-        <ion-header-bar class="bar-stable">
+        <ion-header-bar class="bar-stable bar-calm">
             <h1 class="title">Independent Factors</h1>
-            <form action="index.html">
+            <form action="comprehensive.html">
                 <button class="button button-outline button-dark">Back</button>
             </form>
         </ion-header-bar>
@@ -31,6 +32,16 @@
                 </label>
             </div>
         </ion-content>
+        <div class= "tabs">
+                <a class="tab-item" href = "general_f.html">General</a>
+                <a class="tab-item" href = "clinical.html">Clinical </a>
+                <a class="tab-item" href = "extracardiac.html">Extra Cardiac</a>
+                <a class="tab-item" href = "surgical.html">Surgical Technique</a>
+        </div>
     </ion-pane>
+    <script>
+        update_total_score("total_id");
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,9 @@
+"Redosternotomy: Redo # 1, 2, or 3",2
+Redosternotomy: Redo # 4 or more,1
+Redothoracotomy,1
+Minimal invasive sternotomy,0.5
+Minimal invasive anterolateral thoracotomy,0.5
+Minimal invasive posterolateral thoracotomy,0.5
+Minimal invasive posterior thoracotomy,1
+Robot assisted surgery,0.5
+Video assisted thoracic surgery (VATS),0.5
