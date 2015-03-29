@@ -1,8 +1,8 @@
 function update() {
     var name = document.getElementById("search").value;
     document.getElementById("name").innerHTML = name;
-    document.getElementById("b_score").innerHTML = parseFloat(get_score(name));
-    total_score = parseFloat(get_score(name));
+    document.getElementById("b_score").innerHTML = parseFloat(get_score(name)).toFixed(1);
+    total_score = parseFloat(get_score(name)).toFixed(1);
     document.getElementById("total_main").innerHTML = total_score;
 }
 

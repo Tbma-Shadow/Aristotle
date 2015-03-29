@@ -30,11 +30,11 @@
             </div>
             <div class="card">
                 <div class="item item-divider item-text-wrap">Procedure Name</div>
-                <div class="item item-text-wrap" id="name"></div>
+                <div class="item item-text-wrap" id="name">Procedure</div>
             </div>
             <div class="card">
                 <div class="item item-divider item-text-wrap">Basic Score</div>
-                <div class="item item-text-wrap" id="b_score"></div>
+                <div class="item item-text-wrap" id="b_score">0.0</div>
             </div>
             <form action="dependent_score.html">
                 <button class="button button-block button-calms" onclick = "store_score();">Select the Dependent Factors</button>
@@ -44,17 +44,15 @@
             </form>
             <div class="card">
             	<div class="item item-divider item-text-wrap">Toatl Score</div>
-                <div class="item item-text-wrap" id="total_main"></div>
-                <!--
-                <label class="item item-input item-stacked-label">
-                    <span class="total_main">Total Score</span>
-                    <form id = "total_score">
-                    <input type="text" name="total_main" placeholder="0.0">
-                  </form>
-                </label>
-                -->
+                <div class="item item-text-wrap" id="total_main">0.0</div>
             </div>
         </ion-content>
+        <ion-footer-bar align-title="left" class="bar-calm">
+            <div class="buttons">
+                <form action = "index.html">
+                <button class="button icon-left ion-chevron-left">Back</button></form>
+            </div>
+        </ion-footer-bar>
     </ion-pane>
     <script>
     get_current_state();
