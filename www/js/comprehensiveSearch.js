@@ -3,7 +3,7 @@ function update() {
     document.getElementById("name").innerHTML = name;
     document.getElementById("b_score").innerHTML = parseFloat(get_score(name));
     total_score = parseFloat(get_score(name));
-    document.getElementsByName("total_main")[0].placeholder = total_score;
+    document.getElementById("total_main").innerHTML = total_score;
 }
 
 function get_score(name){

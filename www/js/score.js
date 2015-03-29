@@ -1,13 +1,13 @@
 function store_score(){
 	store_state();
-	var current_score = document.getElementsByName("total_main")[0].placeholder;
+	var current_score = document.getElementById("total_main").innerHTML;
 	window.localStorage['total'] = current_score;
 }
 
 function store_state(){
 	window.localStorage['procedure_text'] = document.getElementById("name").innerHTML;
 	window.localStorage['procedure_score'] = document.getElementById("b_score").innerHTML;
-	window.localStorage['total'] = document.getElementsByName("total_main")[0].placeholder;
+	window.localStorage['total'] = document.getElementById("total_main").innerHTML;
 }
 
 function get_current_state(){
@@ -15,11 +15,11 @@ function get_current_state(){
 	if (x != null){
 	    document.getElementById("b_score").innerHTML = window.localStorage['procedure_score'];
 		document.getElementById("name").innerHTML = window.localStorage['procedure_text'];
-		document.getElementsByName("total_main")[0].placeholder = window.localStorage['total'];
+		document.getElementById("total_main").innerHTML = window.localStorage['total'];
 	}
 	  window.localStorage['procedure_score']= document.getElementById("b_score").innerHTML;
 	 window.localStorage['procedure_text']= document.getElementById("name").innerHTML;
-	 window.localStorage['total']=document.getElementsByName("total_main")[0].placeholder ;
+	 window.localStorage['total']= document.getElementById("total_main").innerHTML;
 }
 
 function update_total_score(id){
