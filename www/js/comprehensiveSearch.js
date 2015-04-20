@@ -3,7 +3,11 @@ function update() {
     document.getElementById("name").innerHTML = name;
     document.getElementById("b_score").innerHTML = parseFloat(get_score(name)).toFixed(1);
     total_score = parseFloat(get_score(name)).toFixed(1);
+    window.localStorage['procedure_score'] = total_score;
     document.getElementById("total_main").innerHTML = total_score;
+    window.localStorage['procedure_text'] = name;
+    enable_buttons();
+    localStorage.setItem("procedure" + 0,name);
 }
 
 function get_score(name){

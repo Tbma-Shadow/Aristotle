@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)file:///C:/Users/nijamu/Desktop/Aristotle/www/general_f.html?#/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+    <link href="file:///C:/Users/nijamu/Desktop/Aristotle/www/lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="file:///C:/Users/nijamu/Desktop/Aristotle/www/css/style.css" rel="stylesheet">
+    <script src="./general_f_files/ionic.bundle.js"></script>
+    <script src="file:///C:/Users/nijamu/Desktop/Aristotle/www/cordova.js"></script>
+    <script src="./general_f_files/autocomplete.directive.js"></script>
+    <script src="./general_f_files/app.js"></script>
+    <script src="file:///C:/Users/nijamu/Desktop/Aristotle/www/js/search.js"></script>
+    <script src="./general_f_files/data.js"></script>
+    <script src="./general_f_files/checkbox.js"></script>
+    <script src="./general_f_files/score.js"></script>
+</head>
+
+<body ng-app="starter" class="grade-a platform-browser platform-win32 platform-ready">
+    <ion-pane class="pane">
+        <ion-header-bar class="bar-stable bar-calm bar bar-header disable-user-behavior">
+            <h1 class="title" style="left: 57px; right: 57px;">General Factors</h1>
+            <form action="file:///C:/Users/nijamu/Desktop/Aristotle/www/comprehensive.html" class="ng-pristine ng-valid">
+                <button class="button button-outline button-dark">Back</button>
+            </form>
+        </ion-header-bar>
+        <ion-content class="scroll-content ionic-scroll  has-header has-footer"><div class="scroll" style="-webkit-transform: translate3d(0px, 0px, 0px) scale(1);">
+        <div id="general"><li class="item item-checkbox">Weight &lt; 2.5 kg<label class="checkbox"><input type="checkbox" id="Weight &lt; 2.5 kg" name="Weight &lt; 2.5 kg" value="2"></label></li><li class="item item-checkbox">Prematurity 32 - 35 weeks<label class="checkbox"><input type="checkbox" id="Prematurity 32 - 35 weeks" name="Prematurity 32 - 35 weeks" value="2"></label></li><li class="item item-checkbox">Extreme Prematurity &lt; 32 weeks<label class="checkbox"><input type="checkbox" id="Extreme Prematurity &lt; 32 weeks" name="Extreme Prematurity &lt; 32 weeks" value="4"></label></li></div>
+        <div class="card">
+            <div class="item item-divider item-text-wrap">Total Score</div>
+            <div class="item item-text-wrap" id="general_total">30.0</div>
+        </div>
+        </div><div class="scroll-bar scroll-bar-v"><div class="scroll-bar-indicator scroll-bar-fade-out" style="-webkit-transform: translate3d(0px, 0px, 0px) scaleY(1); height: 0px;"></div></div></ion-content>
+        <ion-footer-bar align-title="left" class="bar-calm bar bar-footer">
+            <h1 class="title"></h1>
+            <div class="buttons">
+                <form action="file:///C:/Users/nijamu/Desktop/Aristotle/www/clinical.html" class="ng-pristine ng-valid">
+                <button class="button icon-right ion-chevron-right" onclick="ticks(&#39;general&#39;,&#39;clinical&#39;)">Next Factor</button></form>
+            </div>
+        </ion-footer-bar>
+   
+    </ion-pane>
+    <script>
+    create_checkboxes(general,"general");
+    update_total_score("general_total");
+    store_ticks("general");
+    </script>
+
+</body></html>

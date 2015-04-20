@@ -113,7 +113,7 @@ var procedures = [
     },
     {
         "number": "15",
-        "text": "AVC (AVSD) repair, Partial (incomplete) (PAVSD)",
+        "text": "AVC (AVSD) repair, Partial (Incomplete) (PAVSD)",
         "score": "4",
         "mortality": "1",
         "morbidity": "1",
@@ -225,7 +225,7 @@ var procedures = [
     },
     {
         "number": "29",
-        "text": "TOF repair, No ventriculotomy ",
+        "text": "TOF repair, No ventriculotomy",
         "score": "8",
         "mortality": "3",
         "morbidity": "2",
@@ -233,7 +233,7 @@ var procedures = [
     },
     {
         "number": "30",
-        "text": "TOF repair, Ventriculotomy, Non-transanular patch ",
+        "text": "TOF repair, Ventriculotomy, Non-transanular patch",
         "score": "7.5",
         "mortality": "2.5",
         "morbidity": "2",
@@ -241,7 +241,7 @@ var procedures = [
     },
     {
         "number": "31",
-        "text": "TOF repair, Ventriculotomy, Transanular patch ",
+        "text": "TOF repair, Ventriculotomy, Transanular patch",
         "score": "8",
         "mortality": "3",
         "morbidity": "2",
@@ -313,7 +313,7 @@ var procedures = [
     },
     {
         "number": "40",
-        "text": "Valve replacement, Tricuspid (TVR)",
+        "text": "Valve replacement, Tricuspid",
         "score": "7.5",
         "mortality": "2.5",
         "morbidity": "2",
@@ -457,7 +457,7 @@ var procedures = [
     },
     {
         "number": "58",
-        "text": "Aortic root replacement, Valve sparing ",
+        "text": "Aortic root replacement, Valve sparing",
         "score": "8.5",
         "mortality": "2",
         "morbidity": "2",
@@ -497,7 +497,7 @@ var procedures = [
     },
     {
         "number": "63",
-        "text": "Ross�CKonno procedure",
+        "text": "Ross–Konno procedure",
         "score": "12.5",
         "mortality": "4.5",
         "morbidity": "3",
@@ -881,7 +881,7 @@ var procedures = [
     },
     {
         "number": "111",
-        "text": "Lung biopsy",
+        "text": "Lung Biopsy",
         "score": "5",
         "mortality": "1.5",
         "morbidity": "2",
@@ -929,7 +929,7 @@ var procedures = [
     },
     {
         "number": "117",
-        "text": "ICD (AICD) (automatic implantable cardioverter defibrillator) procedure",
+        "text": "ICD (AICD) procedure",
         "score": "4",
         "mortality": "1.5",
         "morbidity": "1",
@@ -945,7 +945,7 @@ var procedures = [
     },
     {
         "number": "119",
-        "text": "Shunt, Systemic to pulmonary, Modified Blalock�CTaussig shunt (MBTS)",
+        "text": "Shunt, Systemic to pulmonary, Modified Blalock–Taussig shunt (MBTS)",
         "score": "6.3",
         "mortality": "2",
         "morbidity": "2",
@@ -985,7 +985,7 @@ var procedures = [
     },
     {
         "number": "124",
-        "text": "Damus�CKaye�CStansel procedure (DKS) (creation of AP anastomosis without arch reconstruction)",
+        "text": "Damus–Kaye–Stansel procedure (DKS) (creation of AP anastomosis without arch reconstruction)",
         "score": "9.5",
         "mortality": "3",
         "morbidity": "3",
@@ -1177,7 +1177,7 @@ var procedures = [
     },
     {
         "number": "148",
-        "text": "Aortic root replacement, Bioprosthetic ",
+        "text": "Aortic root replacement, Bioprosthetic",
         "score": "9.5",
         "mortality": "3.5",
         "morbidity": "2",
@@ -1247,12 +1247,5124 @@ var procedures = [
         "morbidity": "3",
         "difficulty": "3"
     },
-    {
-        "number": ""
-    },
-    {
-        "number": ""
-    }
+]
+
+var dependent_factors = [
+  {
+    "id":1,
+    "procedure":"1 1/2 ventricular repair",
+    "factor":"",
+    "score":"BAS 9.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Ebstein repair ",
+    "score":"(#153)"
+  },
+ 
+  {
+    "id":2,
+    "procedure":"Aneurysm, Pulmonary artery, Repair",
+    "factor":"",
+    "score":"BAS 8.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aneurysm (or false aneurysm) ruptured",
+    "score":"4"
+  },
+ 
+  {
+    "id":3,
+    "procedure":"Aneurysm, Ventricular, Left, Repair",
+    "factor":"",
+    "score":"BAS 9.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aneurysm (or false aneurysm) ruptured",
+    "score":"4"
+  },
+ 
+  {
+    "id":4,
+    "procedure":"Aneurysm, Ventricular, Right, Repair",
+    "factor":"",
+    "score":"BAS 8.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aneurysm (or false aneurysm) ruptured",
+    "score":"4"
+  },
+ 
+  {
+    "id":5,
+    "procedure":"Anomalous origin of coronary artery from pulmonary artery repair",
+    "factor":"",
+    "score":"BAS 10.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"LV ejection fraction <15%",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Takeuchi procedure or other left coronary ostial extension",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Mitral",
+    "score":"4"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valve replacement, Mitral (MVR)",
+    "score":"4"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age <1M",
+    "score":"3"
+  },
+ 
+ 
+  {
+    "id":6,
+    "procedure":"Anomalous systemic venous connection repair",
+    "factor":"",
+    "score":"BAS 7.0"
+  },
+  {
+    "id":7,
+    "procedure":"Aortic aneurysm repair",
+    "factor":"",
+    "score":"BAS 8.8"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Traumatic, acute",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Ruptured aneurysm",
+    "score":"4"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Thoraco-abdominal aneurysm repair",
+    "score":"4"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic root replacement, With mechanical valve",
+    "score":"(#59)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic root replacement, Valve sparing",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic root replacement, With homograft valve",
+    "score":"(#60)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic root replacement, With bioprosthetic valve",
+    "score":"(#148)"
+  },
+  {
+    "id":8,
+    "procedure":"Aortic arch repair",
+    "factor":"",
+    "score":"BAS 7.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Glenn (unidirectional cavopulmonary anastomosis) (unidirectional Glenn)",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Bidirectional cavopulmonary anastomosis (BDCPA) (bidirectional Glenn)",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Bilateral bidirectional cavopulmonary anastomosis (BBDCPA)",
+    "score":"SAPP (#127)"
+  },
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Hemifontan",
+    "score":"SAPP(#128)"
+  },
+ 
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair + VSD repair",
+    "score":"SAPP(#147)"
+  },
+ 
+  {
+    "id":9,
+    "procedure":"Aortic arch repair + VSD repair",
+    "factor":"",
+    "score":"BAS 10.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD, Multiple, repair",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic stenosis, Subvalvar, Repair",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Damus-Kaye-Stansel procedure (DKS) (creation of AP anastomosis without arch reconstruction)",
+    "score":"3.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"LV hypoplasia (see at HLHS biventricular repair)",
+    "score":"SAPP (#72)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Ross-Konno (see at Ross Konno)",
+    "score":"SAPP (#63)"
+  },
+  {
+    "id":10,
+    "procedure":"Aortic dissection repair",
+    "factor":"",
+    "score":"BAS 11.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Ruptured aneurysm",
+    "score":"4"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic root replacement, With mechanical valve",
+    "score":"SAPP (#59)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic root replacement, Valve sparing",
+    "score":"3"
+  },
+ 
+ 
+  {
+    "id":11,
+    "procedure":"Aortic root replacement, Bioprosthetic",
+    "factor":"",
+    "score":"BAS 9.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis with annular abcess",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Previous homograft",
+    "score":"3.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Previous autograft",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coronary artery bypass",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Non Konno annular enlargement procedure",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valve replacement, Mitral (MVR)",
+    "score":"2.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Mitral",
+    "score":"2"
+  },
+ 
+ 
+  {
+    "id":12,
+    "procedure":"Aortic root replacement, Homograft",
+    "factor":"",
+    "score":"BAS 9.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Previous homograft",
+    "score":"3.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Previous autograft",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis with annular abcess",
+    "score":"4"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coronary artery bypass",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"2"
+  },
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Non Konno annular enlargement procedure",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Mitral",
+    "score":"(#68)"
+  },
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valve replacement, Mitral (MVR)",
+    "score":"(#70)"
+  },
+ 
+ 
+ 
+ 
+  {
+    "id":13,
+    "procedure":"Aortic root replacement, Mechanical",
+    "factor":"",
+    "score":"BAS 8.8"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Previous homograft",
+    "score":"3.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Previous autograft",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis with annular abcess",
+    "score":"4"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coronary artery bypass",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"2"
+  },
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Non Konno annular enlargement procedure",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Mitral",
+    "score":"(#68)"
+  },
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valve replacement, Mitral (MVR)",
+    "score":"(#70)"
+  },
+  {
+    "id":14,
+    "procedure":"Aortic root replacement, Valve sparing",
+    "factor":"",
+    "score":"BAS 8.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coronary artery bypass",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"2"
+  },
+ 
+  {
+    "id":15,
+    "procedure":"Aortic stenosis, Subvalvar, Repair",
+    "factor":"",
+    "score":"BAS 6.3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Previous subvalvular resection",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Previous LV to aorta tunnelization patch",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Accessory mitral valve tissue",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Idiopathic hypertrophic subaortic stenosis",
+    "score":"4"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Fibromuscular tunnel",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"SAPP (#104)"
+  },
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Mitral",
+    "score":"SAPP (#68)"
+  },
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valve replacement, Mitral (MVR)",
+    "score":"SAPP (#70)"
+  },
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Ventricular septoplasty",
+    "score":"2.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Aortic",
+    "score":"SAPP (#54)"
+  },
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Ross procedure",
+    "score":"SAPP (#61)"
+  },
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"AVC (AVSD) repair, Complete (CAVSD)",
+    "score":"SAPP (#13)"
+  },
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"AVC (AVSD) repair, Intermediate or Partial",
+    "score":"2.5"
+  },
+ 
+  {
+    "id":16,
+    "procedure":"Aortic stenosis, Supravalvar, Repair",
+    "factor":"",
+    "score":"BAS 5.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Severe stenosis (gradient > 100 mmHg)",
+    "score":"4"
+  },
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"(#104)"
+  },
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Aortic",
+    "score":"(#54)"
+  },
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic root replacement, Valve sparing",
+    "score":"(#58)"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coronary ostial reconstruction",
+    "score":"3"
+  },
+ 
+  {
+    "id":17,
+    "procedure":"Aortopexy",
+    "factor":"",
+    "score":"BAS 4.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Vascular ring repair",
+    "score":"(#107)"
+  },
+ 
+ 
+  {
+    "id":18,
+    "procedure":"AP window repair",
+    "factor":"",
+    "score":"BAS 6.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Interrupted aortic arch repair",
+    "score":"(#105)"
+  },
+ 
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD repair, Patch",
+    "score":"1"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD repair, Primary closure",
+    "score":"1"
+  },
+ 
+  {
+    "id":19,
+    "procedure":"Arrhythmia surgery - atrial, Surgical ablation",
+    "factor":"",
+    "score":"BAS 8.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Maze procedure, right or left",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Maze procedure, bilateral",
+    "score":"3"
+  },
+ 
+  {
+    "id":20,
+    "procedure":"Arrhythmia surgery - ventricular, Surgical ablation",
+    "factor":"",
+    "score":"BAS 8.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"ICD (AICD) implantation",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Pacemaker implantation, Permanent",
+    "score":"1"
+  },
+ 
+  {
+    "id":21,
+    "procedure":"Arterial switch operation (ASO) and VSD repair",
+    "factor":"",
+    "score":"BAS 11.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Straddling AV valve",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Posterior loop: circumflex coming off the RCA",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Posterior Loop: left trunk coming off the RCA",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Anterior Loop",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Double Loops",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Single Ostium",
+    "score":"1"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Intramural coronary",
+    "score":"4"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Malaligned commissures",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Large infundibular artery, from LAD",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Taussig Bing",
+    "score":"2.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Criss cross heart",
+    "score":"4"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Take down of a commissure",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD, Multiple, repair",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic stenosis, Subvalvar, Repair",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"DORV, Intraventricular tunnel repair",
+    "score":"4"
+  },
+ 
+ 
+  {
+    "id":22,
+    "procedure":"Arterial switch operation (ASO)",
+    "factor":"",
+    "score":"BAS 10.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Posterior loop: circumflex coming off the RCA",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Posterior Loop: left trunk coming off the RCA",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Anterior Loop",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Double Loops",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Single Ostium",
+    "score":"1"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Intramural coronary",
+    "score":"4"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Malaligned commissures",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Large infundibular artery, from LAD",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"ASO post LV retraining",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Take down of a commissure",
+    "score":"1.5"
+  },
+ 
+ 
+  {
+    "id":23,
+    "procedure":"Arterial switch procedure + Aortic arch repair",
+    "factor":"",
+    "score":"BAS 11.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Posterior loop: circumflex coming off the RCA",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Posterior Loop: left trunk coming off the RCA",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Anterior Loop",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Double Loops",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Single Ostium",
+    "score":"1"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Intramural coronary",
+    "score":"4"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Malaligned commissures",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Large infundibular artery, from LAD",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"ASO post LV retraining",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Take down of a commissure",
+    "score":"1.5"
+  },
+ 
+ 
+  {
+    "id":24,
+    "procedure":"Arterial switch procedure and VSD repair + Aortic arch repair",
+    "factor":"",
+    "score":"BAS 13.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Straddling AV valve",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Posterior loop: circumflex coming off the RCA",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Posterior Loop: left trunk coming off the RCA",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Anterior Loop",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Double Loops",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Single Ostium",
+    "score":"1"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Intramural coronary",
+    "score":"4"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Malaligned commissures",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Large infundibular artery, from LAD",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"ASO post LV retraining",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Taussig Bing",
+    "score":"2.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Criss cross heart",
+    "score":"4"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic stenosis, Subvalvar repair",
+    "score":"4"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD, Multiple, Repair",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Take down of a commissure",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"DORV, Intraventricular tunnel repair",
+    "score":"4"
+  },
+ 
+  {
+    "id":25,
+    "procedure":"ASD creation/enlargement",
+    "factor":"",
+    "score":"BAS 5.0"
+  },
+
+ 
+  {
+    "id":26,
+    "procedure":"ASD partial closure",
+    "factor":"",
+    "score":"BAS 3.0"
+  },
+ 
+  {
+    "id":27,
+    "procedure":"ASD repair, Patch",
+    "factor":"",
+    "score":"BAS 3.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Sinus venosus",
+    "score":"1"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Sinus venosus + LSVC",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1 Y",
+    "score":"1"
+  },
+ 
+  {
+    "id":28,
+    "procedure":"ASD repair, Primary closure",
+    "factor":"",
+    "score":"BAS 3.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1 Y",
+    "score":"1"
+  },
+ 
+  {
+    "id":29,
+    "procedure":"ASD, Common atrium (Single atrium), Septation",
+    "factor":"",
+    "score":"BAS 3.8"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Atrial baffle procedure (non-Mustard, non-Senning)",
+    "score":"(#26)"
+  },
+ 
+ 
+  {
+    "id":30,
+    "procedure":"Atrial baffle procedure (non-Mustard, non-Senning)",
+    "factor":"",
+    "score":"BAS 7.8"
+  },
+
+ 
+  {
+    "id":31,
+    "procedure":"Atrial baffle procedure, Mustard or Senning revision",
+    "factor":"",
+    "score":"BAS 7.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Enlarge caval pathway",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Enlarge pulmonary venous atrium",
+    "score":"2"
+  },
+ 
+  {
+    "id":32,
+    "procedure":"Atrial fenestration closure",
+    "factor":"",
+    "score":"BAS 3.0"
+  },
+
+  {
+    "id":33,
+    "procedure":"Atrial septal fenestration",
+    "factor":"",
+    "score":"BAS 5.0"
+  },
+
+ 
+  {
+    "id":34,
+    "procedure":"AVC (AVSD) repair, Complete (CAVSD)",
+    "factor":"",
+    "score":"BAS 9.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"AV Valve regurgitation grade 3 and 4",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Double orifice mitral valve",
+    "score":"2.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Parachute mitral valve",
+    "score":"4"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Unbalanced AVSD: LV hypoplasia (LVEDV<20ml/m2)",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Hypoplastic posterior bridging leaflet",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic stenosis, Subvalvar repair",
+    "score":"4"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"TOF - AVC (AVSD) repair",
+    "score":"(#33)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1M",
+    "score":"3"
+  },
+ 
+ 
+ 
+  {
+    "id":35,
+    "procedure":"AVC (AVSD) repair, Intermediate (transitional)",
+    "factor":"",
+    "score":"BAS 5.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"AV Valve regurgitation grade 3 and 4",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Double orifice mitral valve",
+    "score":"2.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Parachute mitral valve",
+    "score":"4"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Unbalanced AVSD: LV hypoplasia (LVEDV<20ml/m2)",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Hypoplastic posterior bridging leaflet",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"(#104)"
+  },
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic stenosis, Subvalvar repair",
+    "score":"(#64)"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1 M",
+    "score":"4"
+  },
+  {
+    "id":36,
+    "procedure":"AVC (AVSD) repair, Partial (Incomplete) (PAVSD)",
+    "factor":"",
+    "score":"BAS 4.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"AV Valve regurgitation grade 3 and 4",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Unbalanced AVSD: LV hypoplasia (LVEDV<20ml/m2)",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic stenosis, Subvalvar repair",
+    "score":"(#64)"
+  },
+  {
+    "id":37,
+    "procedure":"Bidirectional cavopulmonary anastomosis (BDCPA) (bidirectional Glenn)",
+    "factor":"",
+    "score":"BAS 7.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA, reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Systemic AV valve repair",
+    "score":"3.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Damus-Kaye-Stansel",
+    "score":"(#124)"
+  },
+ 
+ 
+ 
+  {
+    "id":38,
+    "procedure":"Bilateral bidirectional cavopulmonary anastomosis (BBDCPA) (bilateral bidirectional Glenn)",
+    "factor":"",
+    "score":"BAS 7.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA, reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Systemic AV valve repair",
+    "score":"3.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Damus-Kaye-Stansel",
+    "score":"(#124)"
+  },
+ 
+ 
+ 
+  {
+    "id":39,
+    "procedure":"Bronchoscopy",
+    "factor":"",
+    "score":"BAS 1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Severe long segment tracheal stenosis",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Foreign body removal",
+    "score":"1"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 6 M",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":40,
+    "procedure":"Cardiac tumor resection",
+    "factor":"",
+    "score":"BAS 8.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Ventricular myocardial involvement",
+    "score":"4"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Malignant neoplasm",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Tricuspid",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Mitral",
+    "score":"3"
+  },
+ 
+  {
+    "id":41,
+    "procedure":"Coarctation + VSD repair",
+    "factor":"",
+    "score":"BAS 10.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD, Multiple, repair",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic stenosis, Subvalvar, Repair",
+    "score":"3"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Damus-Kaye-Stansel procedure (DKS) (creation of AP anastomosis without arch reconstruction)",
+    "score":"3.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"LV hypoplasia (see at HLHS biventricular repair)",
+    "score":"(#72)"
+  },
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Ross-Konno (see at Ross Konno)",
+    "score":"(#63)"
+  },
+ 
+ 
+ 
+  {
+    "id":42,
+    "procedure":"Coarctation repair, End to end",
+    "factor":"",
+    "score":"BAS 6.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aberrant subclavian artery",
+    "score":"1"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Descending aorta Aneurysm",
+    "score":"2.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coarctation + VSD repair",
+    "score":"(#146)"
+  },
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age >10Y",
+    "score":"2"
+  },
+ 
+  {
+    "id":43,
+    "procedure":"Coarctation repair, End to end, Extended",
+    "factor":"",
+    "score":"BAS 8.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aberrant subclavian artery",
+    "score":"1"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coarctation + VSD repair",
+    "score":"(#146)"
+  },
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Anastomosis extended to the proximal arch",
+    "score":"3"
+  },
+ 
+  {
+    "id":44,
+    "procedure":"Coarctation repair, Interposition graft",
+    "factor":"",
+    "score":"BAS 7.8"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Descending aorta Aneurysm",
+    "score":"2.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coarctation + VSD repair",
+    "score":"(#146)"
+  },
+ 
+ 
+  {
+    "id":45,
+    "procedure":"Coarctation repair, Patch aortoplasty",
+    "factor":"",
+    "score":"BAS 6.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coarctation + VSD repair",
+    "score":"(#146)"
+  },
+ 
+ 
+  {
+    "id":46,
+    "procedure":"Coarctation repair, Subclavian flap",
+    "factor":"",
+    "score":"BAS 6.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Reconstruction of left subclavian artery",
+    "score":"1"
+  },
+ 
+  {
+    "id":47,
+    "procedure":"Conduit placement, RV to PA",
+    "factor":"",
+    "score":"BAS 7.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Tricuspid",
+    "score":"1"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Sano shunt",
+    "score":"2"
+  },
+ 
+ 
+  {
+    "id":48,
+    "procedure":"Conduit placement, LV to PA",
+    "factor":"",
+    "score":"BAS 8.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Tricuspid",
+    "score":"1"
+  },
+ 
+ 
+  {
+    "id":49,
+    "procedure":"Conduit placement, Ventricle to aorta",
+    "factor":"",
+    "score":"BAS 9.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Anatomic right ventricle is systemic ventricle",
+    "score":"2"
+  },
+ 
+  {
+    "id":50,
+    "procedure":"Conduit reoperation",
+    "factor":"",
+    "score":"BAS 8.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Severe RV dysfunction",
+    "score":"1"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Failed Homograft",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"RVOT pseudoaneurysm",
+    "score":"1.5"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Tricuspid",
+    "score":"2"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"2.5"
+  },
+ 
+  {
+    "id":51,
+    "procedure":"Congenitally corrected TGA repair, Atrial Switch and ASO (Double switch)",
+    "factor":"",
+    "score":"BAS 13.8"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Single Coronary Ostium",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Dextrocardia",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Following LV retraining",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Ebstein's repair",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"1 1/2 Ventricular Repair",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Intra Operative Ablation of Accessory Pathway",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 6 M",
+    "score":"3"
+  },
+ 
+  {
+    "id":52,
+    "procedure":"Congenitally corrected TGA repair, Atrial switch and Rastelli",
+    "factor":"",
+    "score":"BAS 11.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Dextrocardia",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Inlet VSD",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Ebstein's repair",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"1 1/2 Ventricular Repair",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Intra Operative Ablation of Accessory Pathway",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD, Multiple,Repair",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD creation/enlargement",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 6 M",
+    "score":"3"
+  },
+ 
+  {
+    "id":53,
+    "procedure":"Congenitally corrected TGA repair, VSD closure",
+    "factor":"",
+    "score":"BAS 9.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD, Multiple,Repair",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Tricuspid (sytemic AV Value) valvuloplasty or replacement",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 6 M",
+    "score":"3"
+  },
+ 
+  {
+    "id":54,
+    "procedure":"Congenitally corrected TGA repair, VSD closure and LV to PA conduit",
+    "factor":"",
+    "score":"BAS 11.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD, Multiple,Repair",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Tricuspid (sytemic AV Value) valvuloplasty or replacement",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 6 M",
+    "score":"3"
+  },
+ 
+  {
+    "id":55,
+    "procedure":"Cor triatriatum repair",
+    "factor":"",
+    "score":"BAS 6.8"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Pulmonary venous stenosis repair",
+    "score":"(#25)"
+  },
+ 
+ 
+  {
+    "id":56,
+    "procedure":"Coronary artery bypass",
+    "factor":"",
+    "score":"BAS 7.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coronary artery aneurysm repair",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age <5Y",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age <6M",
+    "score":"3"
+  },
+ 
+  {
+    "id":57,
+    "procedure":"Coronary artery fistula ligation",
+    "factor":"",
+    "score":"BAS 4.0"
+  },
+ 
+ 
+ 
+  {
+    "id":58,
+    "procedure":"Damus–Kaye–Stansel procedure (DKS) (creation of AP anastomosis without arch reconstruction)",
+    "factor":"",
+    "score":"BAS 9.5"
+  },
+ 
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Glenn (unidirectional cavopulmonary anastomosis (unidirectional Glenn)",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Bidirectional cavopulmonary anastomosis (BDCPA) (bidirectional Glenn)",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Bilateral bidirectional cavopulmonary anastomosis (BBDCPA) (bilateral bidirectional Glenn)",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Hemifontan",
+    "score":"2.5"
+  },
+  {
+    "id":59,
+    "procedure":"DCRV repair",
+    "factor":"",
+    "score":"BAS 7.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD, Multiple, Repair",
+    "score":"(#10)"
+  },
+  {
+    "id":60,
+    "procedure":"Decortication",
+    "factor":"",
+    "score":"BAS 5.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Empyemectomy",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 6 M",
+    "score":"2"
+  },
+  {
+    "id":61,
+    "procedure":"Delayed sternal closure",
+    "factor":"",
+    "score":"BAS 1.5"
+  },
+  {
+    "id":62,
+    "procedure":"Diaphragm plication",
+    "factor":"",
+    "score":"BAS 4.0"
+  },
+  {
+    "id":63,
+    "procedure":"DOLV repair",
+    "factor":"",
+    "score":"BAS 11.0"
+  },
+
+  {
+    "id":64,
+    "procedure":"DORV, Intraventricular tunnel repair",
+    "factor":"",
+    "score":"BAS 10.3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"DORV non-committed VSD",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"ASVD",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD, Multiple, repair",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic stenosis, Subvalvar, Repair",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Tricuspid chordae reimplantation",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD creation/enlargement",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Conduit placement, RV to PA",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Arterial switch operation",
+    "score":"(#89)"
+  },
+ 
+  {
+    "id":65,
+    "procedure":"Ebstein's repair",
+    "factor":"",
+    "score":"BAS 10.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Restricted anterior leaflet motion (Type 3)",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Ablation of AV node reentry paathway",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD repair, Patch",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD, Multiple, repair",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD repair, Primary closure",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Bidirectional cavopulmonary anastomosis (BDCPA) (bidirectional Glenn)",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age <1M",
+    "score":"3"
+  },
+  {
+    "id":66,
+    "procedure":"ECMO procedure",
+    "factor":"",
+    "score":"BAS 6.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Primary procedure (acute rejection, drowinig, hypothermia, owerdose, etc...)",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Trans thoracic approach",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 6 M",
+    "score":"2"
+  },
+  {
+    "id":67,
+    "procedure":"Fontan revision or conversion (Re-do Fontan)",
+    "factor":"",
+    "score":"BAS 12.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Systemic AV valve repair",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Arrythmia surgery - atrial, Surgical ablation",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Pacemaker implantation, Permanent",
+    "score":"1"
+  },
+  {
+    "id":68,
+    "procedure":"Fontan, Atrio-pulmonary connection",
+    "factor":"",
+    "score":"BAS 9.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Systemic AV valve repair",
+    "score":"3.5"
+  },
+  {
+    "id":69,
+    "procedure":"Fontan, Atrio-ventricular connection",
+    "factor":"",
+    "score":"BAS 9.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Systemic AV valve repair",
+    "score":"3.5"
+  },
+  {
+    "id":70,
+    "procedure":"Fontan, TCPC, External conduit, Fenestrated",
+    "factor":"",
+    "score":"BAS 9.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Systemic AV valve repair",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Arrythmia surgery - atrial, Surgical ablation",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Fontan revision",
+    "score":"(#154)"
+  },
+ 
+  {
+    "id":71,
+    "procedure":"Fontan, TCPC, External conduit, Non-fenestrated",
+    "factor":"",
+    "score":"BAS 9.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Systemic AV valve repair",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Arrythmia surgery - atrial, Surgical ablation",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Fontan revision",
+    "score":"(#154)"
+  },
+ 
+  {
+    "id":72,
+    "procedure":"Fontan, TCPC, Lateral tunnel, Fenestrated",
+    "factor":"",
+    "score":"SAP 9.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Systemic AV valve repair",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Arrythmia surgery - atrial, Surgical ablation",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Fontan revision",
+    "score":"(#154)"
+  },
+ 
+  {
+    "id":73,
+    "procedure":"Fontan, TCPC, Lateral tunnel, Non-fenestrated",
+    "factor":"",
+    "score":"BAS 9.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Systemic AV valve repair",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Arrythmia surgery - atrial, Surgical ablation",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Fontan revision",
+    "score":"(#154)"
+  },
+ 
+  {
+    "id":74,
+    "procedure":"Glenn (unidirectional cavopulmonary anastomosis) (unidirectional Glenn)",
+    "factor":"",
+    "score":"BAS 7.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA, reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Systemic AV valve repair",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Damus-Kaye-Stansel",
+    "score":"(#124)"
+  },
+ 
+  {
+    "id":75,
+    "procedure":"Hemifontan",
+    "factor":"",
+    "score":"BAS 8.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA, reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Systemic AV valve repair",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Damus-Kaye-Stansel",
+    "score":"(#124)"
+  },
+ 
+  {
+    "id":76,
+    "procedure":"HLHS biventricular repair",
+    "factor":"",
+    "score":"BAS 15.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Mitral",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocardial fibrosis resection",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Ross–Konno procedure",
+    "score":"4"
+  },
+  {
+    "id":77,
+    "procedure":"ICD (AICD) implantation",
+    "factor":"",
+    "score":"BAS 4.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Left superior vena cava",
+    "score":"1"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Sternotomy or thoracotomy required",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 6 M",
+    "score":"1.5"
+  },
+  {
+    "id":78,
+    "procedure":"ICD (AICD) procedure",
+    "factor":"",
+    "score":"BAS 4.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Lead reposition or replacement",
+    "score":"(#116)"
+  },
+ 
+  {
+    "id":79,
+    "procedure":"Interrupted aortic arch repair",
+    "factor":"",
+    "score":"BAS 10.8"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Anatomical Type B",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Intact ventricular septum",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD, Multiple, repair",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic stenosis, Subvalvar, Repair",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Damus-Kaye-Stansel procedure (DKS) (creation of AP anastomosis without arch reconstruction)",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"AP window repair",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Truncus arteriosus repair",
+    "score":"(#18)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"LV hypoplasia (see at HLHS biventricular repair)",
+    "score":"(#72)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Ross-Konno (see at Ross Konno)",
+    "score":"(#63)"
+  },
+ 
+  {
+    "id":80,
+    "procedure":"Intra-aortic balloon pump (IABP) insertion",
+    "factor":"",
+    "score":"BAS 2.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Trans thoracic approach",
+    "score":"2"
+  },
+  {
+    "id":81,
+    "procedure":"Konno procedure",
+    "factor":"",
+    "score":"BAS 11"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Previous autograft",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis with annular abcess",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coronary artery bypass",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valve replacement, Mitral (MVR)",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Mitral",
+    "score":"(#68)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic root replacement",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"LV to aorta tunnel repair",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age > 1M, < 6M",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1 M",
+    "score":"4"
+  },
+  {
+    "id":82,
+    "procedure":"Ligation, Pulmonary artery",
+    "factor":"",
+    "score":"BAS 5.0"
+  },
+
+  {
+    "id":83,
+    "procedure":"Ligation, Thoracic duct",
+    "factor":"",
+    "score":"BAS 4.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Pleurodesis",
+    "score":"2"
+  },
+  {
+    "id":84,
+    "procedure":"Lung Biopsy",
+    "factor":"",
+    "score":"BAS 5.0"
+  },
+
+  {
+    "id":85,
+    "procedure":"LV to aorta tunnel repair",
+    "factor":"",
+    "score":"BAS 8.3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Reimplantation coronary artery",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Aortic",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valve replacement, Aortic (AVR)",
+    "score":"1.5"
+  },
+  {
+    "id":86,
+    "procedure":"Mediastinal exploration",
+    "factor":"",
+    "score":"BAS 1.5"
+  },
+
+  {
+    "id":87,
+    "procedure":"Mitral stenosis, Supravalvar mitral ring repair",
+    "factor":"",
+    "score":"BAS 8.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic stenosis, Subvalvar, Repair",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Mitral",
+    "score":"(#68)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valve replacement, Aortic (AVR)",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Aortic",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valve replacement, Mitral (MVR)",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Repair pulmonary vein stenosis",
+    "score":"4"
+  },
+ 
+  {
+    "id":88,
+    "procedure":"Mustard",
+    "factor":"",
+    "score":"BAS 9.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Juxtaposition appendages",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"LSVC",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD repair, Patch",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD repair, Primary closure",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Congenitally corrected transportation repair with ASO",
+    "score":"(#84)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Congenitally corrected transportation repair with Rastelli",
+    "score":"(#85)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1M",
+    "score":"2"
+  },
+  {
+    "id":89,
+    "procedure":"Norwood procedure",
+    "factor":"",
+    "score":"BAS 14.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic atresia",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Obstructed pulmonary venous return (no ASD)",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"AV Valve regurgitation grade 3 and 4",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aberrant right subclavian artery (except Sano shunt)",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Interrupted arch repair",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"TAPVC repair",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age > 1M",
+    "score":"3"
+  },
+  {
+    "id":90,
+    "procedure":"Occlusion MAPCA(s)",
+    "factor":"",
+    "score":"BAS 7.0"
+  },
+  {
+    "id":91,
+    "procedure":"PA banding (PAB)",
+    "factor":"",
+    "score":"BAS 6.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Single ventricle",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Banding PA branches",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coarctation repair, End to end",
+    "score":"(#99)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coarctation repair, End to end, Extended",
+    "score":"(#100)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coarctation repair, Subclavian flap",
+    "score":"(#101)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coarctation repair, Patch aortoplasty",
+    "score":"(#102)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coarctation repair, Interposition graft",
+    "score":"(#103)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Interrupted aortic arch repair",
+    "score":"(#105)"
+  },
+ 
+ 
+  {
+    "id":92,
+    "procedure":"PA debanding",
+    "factor":"",
+    "score":"BAS 6.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA, reconstruction (plasty), Main (trunk)",
+    "score":"(#45)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA, reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"(#46)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD repair, Primary closure",
+    "score":"(#8)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD repair, Patch",
+    "score":"(#9)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD, Multiple, Repair",
+    "score":"(#10)"
+  },
+ 
+  {
+    "id":93,
+    "procedure":"PA, reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "factor":"",
+    "score":"BAS 7.8"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD repair, Patch",
+    "score":"1"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD repair, Primary closure",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Bilateral PA branch reconstruction",
+    "score":"3"
+  },
+  {
+    "id":94,
+    "procedure":"PA, reconstruction (plasty), Branch, Peripheral (at or beyond the hilar bifurcation)",
+    "factor":"",
+    "score":"BAS 8.8"
+  },
+  {
+    "id":95,
+    "procedure":"PA, reconstruction (plasty), Main (trunk)",
+    "factor":"",
+    "score":"BAS 6.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD repair, Patch",
+    "score":"1"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD repair, Primary closure",
+    "score":"1"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD repair, Primary closure",
+    "score":"1"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"(#46)"
+  },
+ 
+  {
+    "id":96,
+    "procedure":"Pacemaker implantation, Permanent",
+    "factor":"",
+    "score":"BAS 3.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Dual chamber lead placement",
+    "score":"1"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Placement bi-ventricular leads",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Sternotomy or thoracotomy required",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 6 M",
+    "score":"1"
+  },
+  {
+    "id":97,
+    "procedure":"Pacemaker procedure",
+    "factor":"",
+    "score":"BAS 3.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Lead reposition or replacement",
+    "score":"(#114)"
+  },
+ 
+ 
+  {
+    "id":98,
+    "procedure":"PAPVC repair",
+    "factor":"",
+    "score":"BAS 5.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Reimplantation SVC",
+    "score":"1.5"
+  },
+  {
+    "id":99,
+    "procedure":"PAPVC, Scimitar, Repair",
+    "factor":"",
+    "score":"BAS 8.0"
+  },
+
+  {
+    "id":100,
+    "procedure":"Partial left ventriculectomy (LV volume reduction surgery) (Batista)",
+    "factor":"",
+    "score":"BAS 12.0"
+  },
+
+ 
+  {
+    "id":101,
+    "procedure":"PDA closure, Surgical",
+    "factor":"",
+    "score":"BAS 3.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Active endocarditis",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Calcification",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Removal of ductus closure device",
+    "score":"2"
+  },
+  {
+    "id":102,
+    "procedure":"Pectus repair",
+    "factor":"",
+    "score":"BAS 5.3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Assymetric deformity",
+    "score":"3.5"
+  },
+  {
+    "id":103,
+    "procedure":"Pericardial drainage procedure",
+    "factor":"",
+    "score":"BAS 3.0"
+  },
+
+  {
+    "id":104,
+    "procedure":"Pericardiectomy",
+    "factor":"",
+    "score":"BAS 6.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Pericardial/epicardial calcification",
+    "score":"1"
+  },
+  {
+    "id":105,
+    "procedure":"PFO, Primary closure",
+    "factor":"",
+    "score":"BAS 3.0"
+  },
+
+  {
+    "id":106,
+    "procedure":"Pleural drainage procedure",
+    "factor":"",
+    "score":"BAS 1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Empyema",
+    "score":"2"
+  },
+ 
+  {
+    "id":107,
+    "procedure":"Pulmonary artery origin from ascending aorta (hemitruncus) repair",
+    "factor":"",
+    "score":"BAS 9.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD repair, Patch",
+    "score":"1"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD repair, Primary closure",
+    "score":"1"
+  },
+  {
+    "id":108,
+    "procedure":"Pulmonary artery sling repair",
+    "factor":"",
+    "score":"BAS 9.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Bronco-tracheal malacia",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Repair complete tracheo-bronchial rings",
+    "score":"4"
+  },
+  {
+    "id":109,
+    "procedure":"Pulmonary atresia - VSD (including TOF, PA) repair",
+    "factor":"",
+    "score":"BAS 9.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coronary artery anomaly restricting RVOT enlargement, (LAD from RCA etc.)",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD, Multiple, Repair",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age > 1M, < 6M",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1M",
+    "score":"3"
+  },
+  {
+    "id":110,
+    "procedure":"Pulmonary atresia - VSD - MAPCA (pseudotruncus) repair",
+    "factor":"",
+    "score":"BAS 11.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coronary artery anomaly restricting RVOT enlargement, (LAD from RCA etc.)",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Absent native pulmonary artery branches",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD, Multiple, Repair",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Unifocalization MAPCA(s)",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD fenestrated or left open",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age > 1M, < 6M",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1M",
+    "score":"3.5"
+  },
+ 
+  {
+    "id":111,
+    "procedure":"Pulmonary embolectomy",
+    "factor":"",
+    "score":"BAS 8.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Chronic Pulmonary Embolus",
+    "score":"(#156)"
+  },
+ 
+  {
+    "id":112,
+    "procedure":"Pulmonary embolectomy, Acute pulmonary embolus",
+    "factor":"",
+    "score":"BAS 8.0"
+  },
+
+  {
+    "id":113,
+    "procedure":"Pulmonary embolectomy, Chronic pulmonary embolus",
+    "factor":"",
+    "score":"BAS 9.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Pulmonary thromboendarterectomy (CTEPH)",
+    "score":"4"
+  },
+  {
+    "id":114,
+    "procedure":"Pulmonary venous stenosis repair",
+    "factor":"",
+    "score":"BAS 12.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"More than 2 pulmonary veins involved",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Left pulmonary vein stenosis",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Prevoius pulmonary vein stenosis repair",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Single ventricle",
+    "score":"2"
+  },
+  {
+    "id":115,
+    "procedure":"Rastelli",
+    "factor":"",
+    "score":"BAS 10.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Straddling AV valve",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD, Multiple,Repair",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA, reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD creation/enlargement",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Tricuspid chordae reimplantation",
+    "score":"2"
+  },
+  {
+    "id":116,
+    "procedure":"Right/left heart assist device procedure",
+    "factor":"",
+    "score":"BAS 7.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Implant permanent artificial heart",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 6 M",
+    "score":"2"
+  },
+  {
+    "id":117,
+    "procedure":"Ross procedure",
+    "factor":"",
+    "score":"BAS 10.3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Previous homograft",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis with annular abcess",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coronary artery bypass",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valve replacement, Mitral (MVR)",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Mitral",
+    "score":"(#68)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Reduction anuloplasty",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 6M",
+    "score":"2"
+  },
+  {
+    "id":118,
+    "procedure":"Ross–Konno procedure",
+    "factor":"",
+    "score":"BAS 12.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Previous homograft",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis with annular abcess",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coronary artery bypass",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valve replacement, Mitral (MVR)",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Mitral",
+    "score":"(#68)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"LV to aorta tunnel repair",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age > 1M, < 6M",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1 M",
+    "score":"4"
+  },
+  {
+    "id":119,
+    "procedure":"RVOT procedure",
+    "factor":"",
+    "score":"BAS 6.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD repair, Patch",
+    "score":"1"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD repair, Primary closure",
+    "score":"1"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Conduit placement, RV to PA",
+    "score":"(#52)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1M",
+    "score":"3"
+  },
+  {
+    "id":120,
+    "procedure":"Senning",
+    "factor":"",
+    "score":"BAS 8.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Juxtaposed atrial appendages",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Left superior vena cava",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD repair, Patch",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD repair, Primary closure",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Congenitally corrected transportation repair with ASO",
+    "score":"(#84)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Congenitally corrected transportation repair with Rastelli",
+    "score":"(#85)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1M",
+    "score":"2"
+  },
+  {
+    "id":121,
+    "procedure":"Shunt, Ligation and takedown",
+    "factor":"",
+    "score":"BAS 3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA, reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"(#85)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Takedown Pott's shunt",
+    "score":"4"
+  },
+  {
+    "id":122,
+    "procedure":"Shunt, Systemic to pulmonary, Central (From aorta or to main pulmonary artery)",
+    "factor":"",
+    "score":"BAS 6.8"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Hypoplastic pulmonary arteries",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Pulmonary atresia, IVS and RV dependent coronary circulation",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Shunt dependent pulmonary circulation",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Single ventricle",
+    "score":"3"
+  },
+  {
+    "id":123,
+    "procedure":"Shunt, Systemic to pulmonary, Modified Blalock–Taussig shunt (MBTS)",
+    "factor":"",
+    "score":"BAS 6.3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Hypoplastic pulmonary arteries",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Pulmonary atresia, IVS and RV dependent coronary circulation",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Right aortic arch",
+    "score":"1"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aberrant right subclavian artery",
+    "score":"1"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Shunt dependent pulmonary circulation",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Single ventricle",
+    "score":"3"
+  },
+ 
+  {
+    "id":124,
+    "procedure":"Sinus of Valsalva, Aneurysm repair",
+    "factor":"",
+    "score":"BAS 7.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Intracardiac rupture",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Extracardiac rupture",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Aortic",
+    "score":"(#54)"
+  },
+ 
+  {
+    "id":125,
+    "procedure":"Sternotomy wound drainage",
+    "factor":"",
+    "score":"BAS 1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Complete sternectomy",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Muscle or omental flap closure",
+    "score":"4"
+  },
+  {
+    "id":126,
+    "procedure":"Systemic venous stenosis repair",
+    "factor":"",
+    "score":"BAS 8.0"
+  },
+
+  {
+    "id":127,
+    "procedure":"TAPVC repair",
+    "factor":"",
+    "score":"BAS 9.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Obstructed TAPVD",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Infracardiac type",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Mixed type",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Hypoplastic pulmonary veins",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Single ventricle",
+    "score":"3"
+  },
+  {
+    "id":128,
+    "procedure":"TOF - Absent pulmonary valve repair",
+    "factor":"",
+    "score":"BAS 9.3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Bronchial compression (malacia)",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1M",
+    "score":"2.5"
+  },
+  {
+    "id":129,
+    "procedure":"TOF - AVC (AVSD) repair",
+    "factor":"",
+    "score":"BAS 11.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"AV Valve regurgitation grade 3 and 4",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coronary artery anomaly restricting RVOT enlargement, (LAD from RCA etc.)",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD, Multiple, Repair",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Trans-anular patch",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Conduit placement, RV to PA",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 6 M",
+    "score":"2"
+  },
+  {
+    "id":130,
+    "procedure":"TOF repair, No ventriculotomy",
+    "factor":"",
+    "score":"BAS 8.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coronary artery anomaly restricting RVOT enlargement, (LAD from RCA etc.)",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"TOF - AVC (AVSD) repair",
+    "score":"(#33)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD, Multiple, Repair",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"TOF - Absent pulmonary valve repair",
+    "score":"(#34)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1M",
+    "score":"2.5"
+  },
+ 
+  {
+    "id":131,
+    "procedure":"TOF repair, RV-PA conduit",
+    "factor":"",
+    "score":"BAS 8.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coronary artery anomaly restricting RVOT enlargement, (LAD from RCA etc.)",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"TOF - AVC (AVSD) repair",
+    "score":"(#33)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD, Multiple, Repair",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"TOF - Absent pulmonary valve repair",
+    "score":"(#34)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1M",
+    "score":"2.5"
+  },
+  {
+    "id":132,
+    "procedure":"TOF repair, Ventriculotomy, Non-transanular patch",
+    "factor":"",
+    "score":"BAS 7.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coronary artery anomaly restricting RVOT enlargement, (LAD from RCA etc.)",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"TOF - AVC (AVSD) repair",
+    "score":"(#33)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD, Multiple, Repair",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"TOF - Absent pulmonary valve repair",
+    "score":"(#34)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1M",
+    "score":"2.5"
+  },
+  {
+    "id":133,
+    "procedure":"TOF repair, Ventriculotomy, Transanular patch",
+    "factor":"",
+    "score":"BAS 8.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coronary artery anomaly restricting RVOT enlargement, (LAD from RCA etc.)",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"TOF - AVC (AVSD) repair",
+    "score":"(#33)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD, Multiple, Repair",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"TOF - Absent pulmonary valve repair",
+    "score":"(#34)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1M",
+    "score":"2.5"
+  },
+  {
+    "id":134,
+    "procedure":"Transplant, Heart",
+    "factor":"",
+    "score":"BAS 9.3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Previous Fontan",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Previous Glenn shunt",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Panel reactive antibodies > 10%",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Hepatic dysfunction (serum bilirubin > 2)",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Mechanical ventilation",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Previous heart transplant",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PVR 2 to 3 Woods units (FIO2 = 1: NO = 40 ppm)",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PVR 3 to 4 Woods units (FIO2 = 1: NO = 40 ppm)",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Situs inversus",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Pulmonary venous stenosis repair",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Anomalous systemic venous connection repair",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"TAPVC repair",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"1.5"
+  },
+  {
+    "id":135,
+    "procedure":"Transplant, Heart and lung(s)",
+    "factor":"",
+    "score":"BAS 13.3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Situs inversus",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Panel reactive antibodies > 10%",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Anomalous systemic venous connection repair",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 6M",
+    "score":"2.5"
+  },
+  {
+    "id":136,
+    "procedure":"Transplant, Lung(s)",
+    "factor":"",
+    "score":"BAS 12.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Panel reactive antibodies > 10%",
+    "score":"1"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Living donor transplant",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Bilateral transplant",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 5 Y",
+    "score":"3"
+  },
+  {
+    "id":137,
+    "procedure":"Truncus arteriosus repair",
+    "factor":"",
+    "score":"BAS 11.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD creation/enlargement",
+    "score":"1"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Truncal valve",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Replacement, Truncal valve",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Interrupted arch repair",
+    "score":"4"
+  },
+  {
+    "id":138,
+    "procedure":"Unifocalization MAPCA(s)",
+    "factor":"",
+    "score":"BAS 11.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Absent native pulmonary artery branches",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Bilateral Unifocalization by sternotomy",
+    "score":"4"
+  },
+  {
+    "id":139,
+    "procedure":"Valve closure, Tricuspid (exclusion, univentricular approach)",
+    "factor":"",
+    "score":"BAS 9.0"
+  },
+
+  {
+    "id":140,
+    "procedure":"Valve excision, Tricuspid (without replacement)",
+    "factor":"",
+    "score":"BAS 6.0"
+  },
+
+  {
+    "id":141,
+    "procedure":"Valve replacement, Aortic (AVR), Bioprosthetic",
+    "factor":"",
+    "score":"BAS 7.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Previous homograft",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Previous autograft",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis with annular abcess",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coronary artery bypass",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Non Konno annular enlargement procedure",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Mitral",
+    "score":"(#68)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valve replacement, Mitral (MVR)",
+    "score":"(#70)"
+  },
+ 
+  {
+    "id":142,
+    "procedure":"Valve replacement, Aortic (AVR), Homograft",
+    "factor":"",
+    "score":"BAS 8.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Previous homograft",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Previous autograft",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis with annular abcess",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coronary artery bypass",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valve replacement, Mitral (MVR)",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Mitral",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Non Konno annular enlargement procedure",
+    "score":"1.5"
+  },
+  {
+    "id":143,
+    "procedure":"Valve replacement, Aortic (AVR), Mechanical",
+    "factor":"",
+    "score":"BAS 7.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Previous homograft",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Previous autograft",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis with annular abcess",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coronary artery bypass",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Non Konno annular enlargement procedure",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Mitral",
+    "score":"(#68)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valve replacement, Mitral (MVR)",
+    "score":"(#70)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic stenosis, Supravalvular, Repair",
+    "score":"1.5"
+  },
+  {
+    "id":144,
+    "procedure":"Valve replacement, Mitral (MVR)",
+    "factor":"",
+    "score":"BAS 7.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis with annular abcess",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Hypoplasia left ventricle (<20 ml/m2)",
+    "score":"(#72)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Mitral",
+    "score":"(#68)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valve replacement, Aortic (AVR)",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Aortic",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Posterior leaflet resection",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Supra-annular placement",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic stenosis, Subvalvar, Repair",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 6 M",
+    "score":"2"
+  },
+  {
+    "id":145,
+    "procedure":"Valve replacement, Pulmonic (PVR)",
+    "factor":"",
+    "score":"BAS 6.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Tricuspid",
+    "score":"1"
+  },
+  {
+    "id":146,
+    "procedure":"Valve replacement, Tricuspid",
+    "factor":"",
+    "score":"BAS 7.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Ebstein's anomaly",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Ablation of AV node reentry paathway",
+    "score":"2"
+  },
+  {
+    "id":147,
+    "procedure":"Valve replacement, Truncal valve",
+    "factor":"",
+    "score":"BAS 6.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis with annular abcess",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Non Konno annular enlargement procedure",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coronary artery bypass",
+    "score":"2"
+  },
+  {
+    "id":148,
+    "procedure":"Valvuloplasty, Aortic",
+    "factor":"",
+    "score":"BAS 8.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Predominant regurgitaiton",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Hypoplasia left ventricle (<20 ml/m2)",
+    "score":"(#72)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic stenosis, Subvalvar, Repair",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD repair, Patch",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valve replacement, Mitral (MVR)",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Mitral",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic stenosis, Supravalvular, Repair",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1M",
+    "score":"1.5"
+  },
+  {
+    "id":149,
+    "procedure":"Valvuloplasty, Mitral",
+    "factor":"",
+    "score":"BAS 8.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Hypoplasia left ventricle (<20 ml/m2)",
+    "score":"(#72)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Endocarditis with annular abcess",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic stenosis, Subvalvar, Repair",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valve replacement, Aortic (AVR)",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Chordae and/or papillary muscle repair",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Leaflet patch enlargement",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Supravalvar mitral ring repair",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Aortic",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Aortic arch repair",
+    "score":"3.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Tricuspid",
+    "score":"1"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valve replacement, Mitral (MVR)",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 6 M",
+    "score":"2"
+  },
+  {
+    "id":150,
+    "procedure":"Valvuloplasty, Pulmonic",
+    "factor":"",
+    "score":"5.6"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1M",
+    "score":"3"
+  },
+  {
+    "id":151,
+    "procedure":"Valvuloplasty, Tricuspid",
+    "factor":"",
+    "score":"BAS 7.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Ebstein's repair",
+    "score":"(#72)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Chordae repair",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Ablation of AV node reentry paathway",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Bidirectional Glenn (see 1 1/2 ventricular repair)",
+    "score":"(#44)"
+  },
+ 
+  {
+    "id":152,
+    "procedure":"Valvuloplasty, Truncal valve",
+    "factor":"",
+    "score":"BAS 7.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Leaflet resection",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Reimplantation coronary artery",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 6 M",
+    "score":"1.5"
+  },
+  {
+    "id":153,
+    "procedure":"Vascular ring repair",
+    "factor":"",
+    "score":"BAS 6.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Bilaterally patent double aortic arch",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Bronco-tracheal malacia",
+    "score":"3"
+  },
+  {
+    "id":154,
+    "procedure":"Ventricular septal fenestration",
+    "factor":"",
+    "score":"BAS 7.5"
+  },
+
+  {
+    "id":155,
+    "procedure":"Ventricular septation",
+    "factor":"",
+    "score":"BAS 10.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Chordae and/or papillary muscle repair",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Conduit placement, RV to PA",
+    "score":"2"
+  },
+  {
+    "id":156,
+    "procedure":"VSD creation/enlargement",
+    "factor":"",
+    "score":"BAS 9.0"
+  },
+  {
+    "id":157,
+    "procedure":"VSD repair, Patch",
+    "factor":"",
+    "score":"BAS 6.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Apical VSD",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Inlet VSD",
+    "score":"1"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Straddling AV valve",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Aortic",
+    "score":"(#54)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"AP window repair",
+    "score":"(#16)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA, reconstruction (plasty), Main (trunk)",
+    "score":"(#45)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA, reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"(#46)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coarctation + VSD repair",
+    "score":"(#146)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Interrupted aortic arch repair",
+    "score":"(#105)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"RVOT procedure",
+    "score":"(#43)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1 M",
+    "score":"1"
+  },
+  {
+    "id":158,
+    "procedure":"VSD repair, Primary closure",
+    "factor":"",
+    "score":"BAS 6.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Apical VSD",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Inlet VSD",
+    "score":"1"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Straddling AV valve",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Aortic",
+    "score":"(#54)"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"AP window repair",
+    "score":"(#16)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA, reconstruction (plasty), Main (trunk)",
+    "score":"(#45)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA, reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"(#46)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coarctation + VSD repair",
+    "score":"(#146)"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Interrupted aortic arch repair",
+    "score":"(#105)"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"RVOT procedure",
+    "score":"(#43)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1 M",
+    "score":"1"
+  },
+  {
+    "id":159,
+    "procedure":"VSD, Multiple, Repair",
+    "factor":"",
+    "score":"BAS 9.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Apical VSD",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Inlet VSD",
+    "score":"1"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Straddling AV valve",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Swiss Cheese (> 2 VSDs)",
+    "score":"4"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"RVOT procedure",
+    "score":"1"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Valvuloplasty, Aortic",
+    "score":"(#54)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"AP window repair",
+    "score":"(#16)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Coarctation + VSD repair",
+    "score":"(#146)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Interrupted aortic arch repair",
+    "score":"(#105)"
+  },
+ 
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA, reconstruction(plasty), Main (trunk)",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"PA, reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Age < 1 M",
+    "score":"1"
+  },
+  {
+    "id":160,
+    "procedure":"REV",
+    "factor":"",
+    "score":"BAS 10.0"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Straddling AV valve",
+    "score":"3"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Side by side vessels",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":" Coronary across RVOT",
+    "score":"1.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"DORV non-committed VSD",
+    "score":"4"
+  },
+ {
+    "id":null,
+    "procedure":"",
+    "factor":"PA, reconstruction (plasty), Branch, Central (within the hilar bifurcation)",
+    "score":"2"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"VSD creation/enlargement",
+    "score":"2.5"
+  },
+  {
+    "id":null,
+    "procedure":"",
+    "factor":"Tricuspid chordae reimplantation",
+    "score":"2"
+  },
 ]
 
 var general = [

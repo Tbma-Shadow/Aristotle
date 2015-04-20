@@ -14,26 +14,25 @@
     <script src="js/search.js"></script>
     <script src="js/data.js"></script>
     <script src="js/score.js"></script>
+    <script src="js/checkbox.js"></script>
 </head>
 
 <body ng-app="starter">
     <ion-pane>
-        <ion-header-bar class="bar-stable bar-calm">
+        <ion-header-bar class="bar-stable bar-energized">
+        <button onclick = "navigate_back_button()" class="button button-outline button-dark">Back</button>
             <h1 class="title">Dependent Factors</h1>
-            <form action="comprehensive.html">
-                <button class="button button-outline button-dark">Back</button>
-            </form>
         </ion-header-bar>
         <ion-content>
+        <div id = "dependent_factor"></div>
         <div class="card">
-                <label class="item item-input item-stacked-label">
-                    <span class="total_main">Total Score</span>
-                    <input type="text" name="total_d" placeholder="0.0">
-                </label>
-            </div>
+            <div class="item item-divider item-text-wrap">Total Score</div>
+            <div class="item item-text-wrap" id="total_d"></div>
+        </div>
         </ion-content>
     </ion-pane>
     <script>
+    create_dependent_factor_checkboxes("dependent_factor");
     update_total_score("total_d");
     </script>
 </body>
